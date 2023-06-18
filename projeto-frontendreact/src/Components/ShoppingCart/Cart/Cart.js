@@ -1,8 +1,10 @@
+import { ConteinerCard } from "./CartStyle";
+
 export default function Cart() {
     return (
-        <div>
-            <p>Cart</p>
-        </div>
+        <ConteinerCard>
+            <div>Cart</div>
+        </ConteinerCard>
 
     )
 }
