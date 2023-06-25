@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
-export const ConteinerCard = styled.div `
+export const ConteinerCart = styled.div `
     display: flex;
     flex-direction: column;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    width: 20%;
+    width: 90%;
     border: 1px solid black;
     padding: 1rem;
+    margin-left: 0.5rem;
 
 `
-export const H1 = styled.h1 `
+export const h2 = styled.h2 `
     display:flex;
 `
 export const QntProduct = styled.div`

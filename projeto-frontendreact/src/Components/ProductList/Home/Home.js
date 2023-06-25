@@ -1,7 +1,10 @@
 import { Couteiner, FirstDiv, ProductContainer, Ordenation } from "./HomeStyle"
 import { ProductCard } from "../ProductCard/ProductCard"
+import { useState } from "react"
 
-export default function Home({ ProductList }) {
+export default function Home({ ProductList, addToCart }) {
+    
+
     return (
         <Couteiner>
             <FirstDiv>
@@ -15,22 +18,15 @@ export default function Home({ ProductList }) {
                 </Ordenation>
             </FirstDiv>
             <ProductContainer>
-            <ProductCard
-                name={ProductList[0].name}
-                value={ProductList[0].value}
-                imageUrl={ProductList[0].imageUrl}
-            />
-            <ProductCard
-                name={ProductList[1].name}
-                value={ProductList[1].value}
-                imageUrl={ProductList[1].imageUrl}
-            />
-            <ProductCard
-                name={ProductList[2].name}
-                value={ProductList[2].value}
-                imageUrl={ProductList[2].imageUrl}
-            />
-            
+                {ProductList.map((product, index) => (
+                    <ProductCard
+                        key={index}
+                        name={product.name}
+                        value={product.value}
+                        imageUrl={product.imageUrl}
+                        addToCart={() => addToCart(product)}
+                    />
+                ))}
             </ProductContainer>
         </Couteiner>
 
