@@ -2,7 +2,7 @@ import React from "react";
 import { ConteinerFilter } from "./FiltersStyle";
 
 export default function Filters({ searchName, setSearchName, minFilter, setMinFilter, maxFilter, setMaxFilter }) {
-
+    
     return (
         <ConteinerFilter>
 

@@ -20,7 +20,7 @@ export const ProductCard = ({name, value, imageUrl, addToCart}) => {
                 /> 
                 <ProductInfo>
                     <h3>{name} </h3>
-                    <p> {value} </p>
+                    <p> R$ {value} </p>
                     <ProductBtn onClick={handleAddCart}>
                         <ImageBtn src={carrinho}>
                         </ImageBtn>
