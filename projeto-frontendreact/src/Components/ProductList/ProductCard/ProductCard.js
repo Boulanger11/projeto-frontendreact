@@ -1,4 +1,5 @@
-import { Product, ProductImg, ProductInfo, ProductBtn } from "./ProductCardStyle"
+import { Product, ProductImg, ProductInfo, ProductBtn, ImageBtn } from "./ProductCardStyle"
+import carrinho from "../../assents/Logo/carrinho2.png"
 
 export const ProductCard = ({name, value, imageUrl, addToCart}) => {
     
@@ -18,9 +19,12 @@ export const ProductCard = ({name, value, imageUrl, addToCart}) => {
                 <ProductImg src={imageUrl} alt={name}
                 /> 
                 <ProductInfo>
-                    <p>{name} </p>
-                    <p>R$ {value} </p>
-                    <ProductBtn onClick={handleAddCart}>Adicionar ao Carrinho</ProductBtn>
+                    <h3>{name} </h3>
+                    <p> {value} </p>
+                    <ProductBtn onClick={handleAddCart}>
+                        <ImageBtn src={carrinho}>
+                        </ImageBtn>
+                    </ProductBtn>
                 </ProductInfo>
             </Product>
            
