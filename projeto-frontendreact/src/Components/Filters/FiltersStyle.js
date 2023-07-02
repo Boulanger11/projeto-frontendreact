@@ -2,12 +2,19 @@ import styled from "styled-components";
 
 export const ConteinerFilter = styled.div `
     display: flex;
-    flex-direction: column;
-    width: 20%;
-    border: 1px solid black;
-    padding: 1%;
+    flex-direction: row;
+    justify-content: center;
+    height: 3rem;
 
-    @media screen and (max-width: 480px) {
-        
-    }
+input {
+    margin: 1rem;
+    border-radius: 5rem;
+    height: 2rem;
+    padding: 1rem;
+}
+
+label {
+    margin: 1rem 0 0 0;
+    padding: 0.5rem;
+}
 `

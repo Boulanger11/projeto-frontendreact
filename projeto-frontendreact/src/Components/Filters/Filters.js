@@ -2,10 +2,10 @@ import React from "react";
 import { ConteinerFilter } from "./FiltersStyle";
 
 export default function Filters({ searchName, setSearchName, minFilter, setMinFilter, maxFilter, setMaxFilter }) {
-    
+
     return (
         <ConteinerFilter>
-            <h1>Filters</h1>
+
             <label>Busca por nome:</label>
             <input type={`text`}
                 placeholder="Buscar por nome"
@@ -24,7 +24,8 @@ export default function Filters({ searchName, setSearchName, minFilter, setMinFi
                 value={minFilter}
                 onChange={(event) => setMinFilter(event.target.value)}
             />
+            
         </ConteinerFilter>
-    
+
     )
 }
